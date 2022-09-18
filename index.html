@@ -45,16 +45,12 @@
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
         const value = toDoItem.value
-        if (value != ''){  
           const node = document.createElement('li')
           const text_node = document.createTextNode(value)
           node.appendChild(text_node)
           output.appendChild(node)
           input.value = ''
-        }
-        else {
-          alert("Input tidak boleh kosong mas e")
-        }
+        
       }
 
       // TODO: register event onclick / addEventListener untuk button
